@@ -100,7 +100,7 @@
             this.MinimumSize = new System.Drawing.Size(621, 401);
             this.Name = "FrmQuanLy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmQuanLy";
+            this.Text = "Quản Lý";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmQuanLy_FormClosed);
             this.ResumeLayout(false);
 

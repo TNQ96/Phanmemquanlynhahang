@@ -74,7 +74,7 @@
             this.MinimumSize = new System.Drawing.Size(621, 401);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Phan Mem Quan Ly Nha Hang";
+            this.Text = "Phần Mềm Quản Lý Nhà Hàng";
             this.ResumeLayout(false);
 
         }

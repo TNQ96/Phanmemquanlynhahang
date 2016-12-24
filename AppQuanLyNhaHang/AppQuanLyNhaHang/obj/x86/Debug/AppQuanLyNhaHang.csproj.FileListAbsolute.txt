@@ -9,3 +9,6 @@ C:\Users\Nhat\Desktop\AppQuanLyNhaHang\AppQuanLyNhaHang\bin\Debug\AppQuanLyNhaHa
 C:\Users\Nhat\Desktop\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.exe
 C:\Users\Nhat\Desktop\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.pdb
 C:\Users\Nhat\Desktop\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.csprojResolveAssemblyReference.cache
+C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\bin\Debug\AppQuanLyNhaHang.exe.config
+C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.exe
+C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.pdb
