@@ -319,7 +319,7 @@
             this.MinimumSize = new System.Drawing.Size(621, 401);
             this.Name = "FrmSanPham";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmSanPham";
+            this.Text = "Quản Lý Sản Phẩm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmSanPham_FormClosed);
             this.Load += new System.EventHandler(this.FrmSanPham_Load);
             this.groupBox1.ResumeLayout(false);
