@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NhaHangHanModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="NhaHangHanEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CTDH" EntityType="NhaHangHanModel.CTDH" />
+    <EntitySet Name="HoaDon" EntityType="NhaHangHanModel.HoaDon" />
+    <EntitySet Name="KhachHang" EntityType="NhaHangHanModel.KhachHang" />
+    <EntitySet Name="LoaiSP" EntityType="NhaHangHanModel.LoaiSP" />
+    <EntitySet Name="NhanVien" EntityType="NhaHangHanModel.NhanVien" />
+    <EntitySet Name="SanPham" EntityType="NhaHangHanModel.SanPham" />
+    <AssociationSet Name="FK_CTDH_HoaDon" Association="NhaHangHanModel.FK_CTDH_HoaDon">
+      <End Role="HoaDon" EntitySet="HoaDon" />
+      <End Role="CTDH" EntitySet="CTDH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CTDH_SanPham" Association="NhaHangHanModel.FK_CTDH_SanPham">
+      <End Role="SanPham" EntitySet="SanPham" />
+      <End Role="CTDH" EntitySet="CTDH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoaDon_KhachHang" Association="NhaHangHanModel.FK_HoaDon_KhachHang">
+      <End Role="KhachHang" EntitySet="KhachHang" />
+      <End Role="HoaDon" EntitySet="HoaDon" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoaDon_NhanVien" Association="NhaHangHanModel.FK_HoaDon_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanVien" />
+      <End Role="HoaDon" EntitySet="HoaDon" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SanPham_LoaiSP" Association="NhaHangHanModel.FK_SanPham_LoaiSP">
+      <End Role="LoaiSP" EntitySet="LoaiSP" />
+      <End Role="SanPham" EntitySet="SanPham" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CTDH">
+    <Key>
+      <PropertyRef Name="MaHD" />
+      <PropertyRef Name="MaSP" />
+    </Key>
+    <Property Name="MaHD" Type="Int32" Nullable="false" />
+    <Property Name="MaSP" Type="String" Nullable="false" MaxLength="4" Unicode="true" FixedLength="false" />
+    <Property Name="Soluong" Type="Int16" />
+    <NavigationProperty Name="HoaDon" Relationship="NhaHangHanModel.FK_CTDH_HoaDon" FromRole="CTDH" ToRole="HoaDon" />
+    <NavigationProperty Name="SanPham" Relationship="NhaHangHanModel.FK_CTDH_SanPham" FromRole="CTDH" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="HoaDon">
+    <Key>
+      <PropertyRef Name="MaHD" />
+    </Key>
+    <Property Name="MaHD" Type="Int32" Nullable="false" />
+    <Property Name="MaKH" Type="Int32" />
+    <Property Name="MaNV" Type="Int32" />
+    <Property Name="NgayLapHD" Type="DateTime" />
+    <NavigationProperty Name="CTDH" Relationship="NhaHangHanModel.FK_CTDH_HoaDon" FromRole="HoaDon" ToRole="CTDH" />
+    <NavigationProperty Name="KhachHang" Relationship="NhaHangHanModel.FK_HoaDon_KhachHang" FromRole="HoaDon" ToRole="KhachHang" />
+    <NavigationProperty Name="NhanVien" Relationship="NhaHangHanModel.FK_HoaDon_NhanVien" FromRole="HoaDon" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="KhachHang">
+    <Key>
+      <PropertyRef Name="MaKH" />
+    </Key>
+    <Property Name="MaKH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HoKH" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TenKH" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Ngaysinh" Type="DateTime" />
+    <Property Name="Diachi" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Dienthoai" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="HoaDon" Relationship="NhaHangHanModel.FK_HoaDon_KhachHang" FromRole="KhachHang" ToRole="HoaDon" />
+  </EntityType>
+  <EntityType Name="LoaiSP">
+    <Key>
+      <PropertyRef Name="MaLoaiSP" />
+    </Key>
+    <Property Name="MaLoaiSP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenLoaiSP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="SanPham" Relationship="NhaHangHanModel.FK_SanPham_LoaiSP" FromRole="LoaiSP" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="NhanVien">
+    <Key>
+      <PropertyRef Name="MaNV" />
+    </Key>
+    <Property Name="MaNV" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HoNV" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TenNV" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NgaysinhNV" Type="DateTime" />
+    <Property Name="Diachi" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Dienthoai" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Chucvu" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="HoaDon" Relationship="NhaHangHanModel.FK_HoaDon_NhanVien" FromRole="NhanVien" ToRole="HoaDon" />
+  </EntityType>
+  <EntityType Name="SanPham">
+    <Key>
+      <PropertyRef Name="MaSP" />
+    </Key>
+    <Property Name="MaSP" Type="String" Nullable="false" MaxLength="4" Unicode="true" FixedLength="false" />
+    <Property Name="TenSP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Donvitinh" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Dongia" Type="Double" />
+    <Property Name="MaLoaiSP" Type="Int32" Nullable="false" />
+    <Property Name="HinhSP" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CTDH" Relationship="NhaHangHanModel.FK_CTDH_SanPham" FromRole="SanPham" ToRole="CTDH" />
+    <NavigationProperty Name="LoaiSP" Relationship="NhaHangHanModel.FK_SanPham_LoaiSP" FromRole="SanPham" ToRole="LoaiSP" />
+  </EntityType>
+  <Association Name="FK_CTDH_HoaDon">
+    <End Role="HoaDon" Type="NhaHangHanModel.HoaDon" Multiplicity="1" />
+    <End Role="CTDH" Type="NhaHangHanModel.CTDH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoaDon">
+        <PropertyRef Name="MaHD" />
+      </Principal>
+      <Dependent Role="CTDH">
+        <PropertyRef Name="MaHD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CTDH_SanPham">
+    <End Role="SanPham" Type="NhaHangHanModel.SanPham" Multiplicity="1" />
+    <End Role="CTDH" Type="NhaHangHanModel.CTDH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPham">
+        <PropertyRef Name="MaSP" />
+      </Principal>
+      <Dependent Role="CTDH">
+        <PropertyRef Name="MaSP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoaDon_KhachHang">
+    <End Role="KhachHang" Type="NhaHangHanModel.KhachHang" Multiplicity="0..1" />
+    <End Role="HoaDon" Type="NhaHangHanModel.HoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachHang">
+        <PropertyRef Name="MaKH" />
+      </Principal>
+      <Dependent Role="HoaDon">
+        <PropertyRef Name="MaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoaDon_NhanVien">
+    <End Role="NhanVien" Type="NhaHangHanModel.NhanVien" Multiplicity="0..1" />
+    <End Role="HoaDon" Type="NhaHangHanModel.HoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNV" />
+      </Principal>
+      <Dependent Role="HoaDon">
+        <PropertyRef Name="MaNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SanPham_LoaiSP">
+    <End Role="LoaiSP" Type="NhaHangHanModel.LoaiSP" Multiplicity="1" />
+    <End Role="SanPham" Type="NhaHangHanModel.SanPham" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiSP">
+        <PropertyRef Name="MaLoaiSP" />
+      </Principal>
+      <Dependent Role="SanPham">
+        <PropertyRef Name="MaLoaiSP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
