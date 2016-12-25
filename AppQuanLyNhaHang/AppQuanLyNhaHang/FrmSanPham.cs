@@ -62,7 +62,26 @@ namespace AppQuanLyNhaHang
         }
         private void FillCombo()
         {
-            cn.Open();
+            try
+            {
+                using (var db = new NhaHangHanEntities())
+                {
+                    var query = from prd in db.LoaiSP
+                                select new
+                                {
+                                    MaLoaiSP = prd.MaLoaiSP,
+                                    TenLoaiSP = prd.TenLoaiSP
+                                };
+                    cbbMaLoaiSP.DataSource = query.ToList();
+                    cbbMaLoaiSP.DisplayMember = "TenLoaiSP";
+                    cbbMaLoaiSP.ValueMember = "MaLoaiSP";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+           /* cn.Open();
             SqlCommand cm = new SqlCommand("SELECT MaLoaiSP FROM LoaiSP ORDER BY MaLoaiSP ASC", cn);
             try
             {
@@ -82,7 +101,7 @@ namespace AppQuanLyNhaHang
             finally
             {
                 cn.Close();
-            }
+            }*/
         }
 
         private void btAdd_Click(object sender, EventArgs e)
@@ -97,7 +116,7 @@ namespace AppQuanLyNhaHang
                         TenSP = txtTenSP.Text.Trim(),
                         Dongia = double.Parse(txtDonGia.Text.Trim()),
                         Donvitinh = txtDVT.Text.Trim(),
-                        MaLoaiSP = int.Parse(cbbMaLoaiSP.Text)
+                        MaLoaiSP = int.Parse(cbbMaLoaiSP.SelectedValue.ToString())
 
                     };
                     db.SanPham.AddObject(prd);
@@ -154,7 +173,7 @@ namespace AppQuanLyNhaHang
                         prdToUpdate.TenSP = txtTenSP.Text.Trim();
                         prdToUpdate.Donvitinh = txtDVT.Text.Trim();
                         prdToUpdate.Dongia = double.Parse(txtDonGia.Text.Trim());
-                        prdToUpdate.MaLoaiSP = int.Parse(cbbMaLoaiSP.Text);
+                        prdToUpdate.MaLoaiSP = int.Parse(cbbMaLoaiSP.SelectedValue.ToString());
                         db.SaveChanges();
                     }
                     LoadProduct();
