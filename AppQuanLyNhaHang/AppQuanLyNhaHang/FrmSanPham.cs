@@ -13,8 +13,7 @@ namespace AppQuanLyNhaHang
 {
     public partial class FrmSanPham : Form
     {
-        string cnStr;
-        SqlConnection cn;
+        
         public FrmSanPham()
         {
             InitializeComponent();
@@ -22,8 +21,7 @@ namespace AppQuanLyNhaHang
 
         private void FrmSanPham_Load(object sender, EventArgs e)
         {
-            cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
-            cn = new SqlConnection(cnStr);
+            
             LoadProduct();
             FillNoGirdView();
             FillCombo();
@@ -81,27 +79,7 @@ namespace AppQuanLyNhaHang
             {
                 MessageBox.Show(ex.Message);
             }
-           /* cn.Open();
-            SqlCommand cm = new SqlCommand("SELECT MaLoaiSP FROM LoaiSP ORDER BY MaLoaiSP ASC", cn);
-            try
-            {
-                SqlDataReader dr = cm.ExecuteReader();
-                while (dr.Read())
-                {
-                    cbbMaLoaiSP.Items.Add(dr["MaLoaiSP"]);
-                }
-                dr.Close();
-                dr.Dispose();
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                cn.Close();
-            }*/
+           
         }
 
         private void btAdd_Click(object sender, EventArgs e)
