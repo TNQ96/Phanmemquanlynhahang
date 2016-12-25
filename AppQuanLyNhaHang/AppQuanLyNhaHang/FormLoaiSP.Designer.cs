@@ -1,4 +1,4 @@
-﻿namespace QLNhaHang
+﻿namespace AppQuanLyNhaHang
 {
     partial class FormLoaiSP
     {

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace QLNhaHang
+namespace AppQuanLyNhaHang
 {
     public partial class FormLoaiSP : Form
     {
@@ -58,7 +58,7 @@ namespace QLNhaHang
                 grvData.DataSource = dtHang;
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 MessageBox.Show("Loi:" + ex.Message);
 

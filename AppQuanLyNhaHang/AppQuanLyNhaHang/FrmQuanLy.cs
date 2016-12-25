@@ -30,5 +30,12 @@ namespace AppQuanLyNhaHang
             f.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormLoaiSP f = new FormLoaiSP();
+            f.Show();
+            this.Hide();
+        }
     }
 }
