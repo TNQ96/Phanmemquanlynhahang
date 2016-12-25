@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btQLSP = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btQLNV = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -48,18 +48,19 @@
             this.btQLSP.UseVisualStyleBackColor = true;
             this.btQLSP.Click += new System.EventHandler(this.btQLSP_Click);
             // 
-            // button2
+            // btQLNV
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.btQLNV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button2.Location = new System.Drawing.Point(50, 216);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(207, 53);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Quản Lý Nhân Viên";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btQLNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btQLNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btQLNV.Location = new System.Drawing.Point(50, 216);
+            this.btQLNV.Name = "btQLNV";
+            this.btQLNV.Size = new System.Drawing.Size(207, 53);
+            this.btQLNV.TabIndex = 0;
+            this.btQLNV.Text = "Quản Lý Nhân Viên";
+            this.btQLNV.UseVisualStyleBackColor = true;
+            this.btQLNV.Click += new System.EventHandler(this.btQLNV_Click);
             // 
             // button3
             // 
@@ -95,7 +96,7 @@
             this.ClientSize = new System.Drawing.Size(605, 362);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btQLNV);
             this.Controls.Add(this.btQLSP);
             this.MinimumSize = new System.Drawing.Size(621, 401);
             this.Name = "FrmQuanLy";
@@ -109,7 +110,7 @@
         #endregion
 
         private System.Windows.Forms.Button btQLSP;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btQLNV;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
     }

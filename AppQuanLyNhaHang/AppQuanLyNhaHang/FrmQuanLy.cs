@@ -30,5 +30,12 @@ namespace AppQuanLyNhaHang
             f.Show();
             this.Hide();
         }
+
+        private void btQLNV_Click(object sender, EventArgs e)
+        {
+            FrmNhanVien f = new FrmNhanVien();
+            f.Show();
+            this.Hide();
+        }
     }
 }

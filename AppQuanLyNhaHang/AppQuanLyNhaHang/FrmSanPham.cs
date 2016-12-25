@@ -63,7 +63,7 @@ namespace AppQuanLyNhaHang
         private void FillCombo()
         {
             cn.Open();
-            SqlCommand cm = new SqlCommand("SELECT MaLoaiSP FROM LoaiSP ORDER BY MaLoaiSP ASC", cn);
+            SqlCommand cm = new SqlCommand("SELECT * FROM LoaiSP ORDER BY MaLoaiSP ASC", cn);
             try
             {
                 SqlDataReader dr = cm.ExecuteReader();
