@@ -38,9 +38,9 @@
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaLoaiSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenLoaiSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Thêm = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grvData)).BeginInit();
@@ -61,14 +61,14 @@
             // 
             // txtTenHH
             // 
-            this.txtTenHH.Location = new System.Drawing.Point(129, 72);
+            this.txtTenHH.Location = new System.Drawing.Point(141, 72);
             this.txtTenHH.Name = "txtTenHH";
             this.txtTenHH.Size = new System.Drawing.Size(432, 20);
             this.txtTenHH.TabIndex = 1;
             // 
             // txtMaHang
             // 
-            this.txtMaHang.Location = new System.Drawing.Point(129, 31);
+            this.txtMaHang.Location = new System.Drawing.Point(141, 31);
             this.txtMaHang.Name = "txtMaHang";
             this.txtMaHang.Size = new System.Drawing.Size(432, 20);
             this.txtMaHang.TabIndex = 1;
@@ -78,9 +78,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(28, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 13);
+            this.label2.Size = new System.Drawing.Size(107, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Tên loại sản phẩm";
+            this.label2.Text = "Tên loại sản phẩm (*)";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
@@ -115,7 +115,9 @@
             this.grvData.Name = "grvData";
             this.grvData.Size = new System.Drawing.Size(699, 166);
             this.grvData.TabIndex = 0;
-            this.grvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grvData_CellContentClick);
+            this.grvData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grvData_CellClick);
+            this.grvData.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.grvData_RowEnter);
+            this.grvData.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.grvData_RowsAdded);
             // 
             // STT
             // 
@@ -136,46 +138,55 @@
             this.TenLoaiSP.HeaderText = "Ten Loai San Pham";
             this.TenLoaiSP.Name = "TenLoaiSP";
             // 
-            // Thêm
+            // btnAdd
             // 
-            this.Thêm.Location = new System.Drawing.Point(77, 189);
-            this.Thêm.Name = "Thêm";
-            this.Thêm.Size = new System.Drawing.Size(106, 35);
-            this.Thêm.TabIndex = 2;
-            this.Thêm.Text = "Thêm";
-            this.Thêm.UseVisualStyleBackColor = true;
-            this.Thêm.Click += new System.EventHandler(this.Thêm_Click);
+            this.btnAdd.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAdd.Location = new System.Drawing.Point(231, 171);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(106, 35);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button2
+            // btnEdit
             // 
-            this.button2.Location = new System.Drawing.Point(226, 189);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 35);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Sửa";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Location = new System.Drawing.Point(343, 171);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(106, 35);
+            this.btnEdit.TabIndex = 2;
+            this.btnEdit.Text = "Sửa";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // button3
+            // btnDelete
             // 
-            this.button3.Location = new System.Drawing.Point(383, 189);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 35);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Location = new System.Drawing.Point(455, 171);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(106, 35);
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.Text = "Xóa";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // FormLoaiSP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(718, 451);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.Thêm);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormLoaiSP";
             this.Text = "Thông tin loại sản phẩm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLoaiSP_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -189,17 +200,17 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtTenHH;
-        private System.Windows.Forms.TextBox txtMaHang;
-        private System.Windows.Forms.Button Thêm;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridView grvData;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenLoaiSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaLoaiSP;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtMaHang;
     }
 }
 
