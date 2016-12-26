@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtNgaySinhNV = new System.Windows.Forms.DateTimePicker();
+            this.txtTen = new System.Windows.Forms.TextBox();
+            this.txtHo = new System.Windows.Forms.TextBox();
+            this.txtChucVu = new System.Windows.Forms.TextBox();
+            this.txtDienThoaiNV = new System.Windows.Forms.TextBox();
+            this.txtDiaChiNV = new System.Windows.Forms.TextBox();
+            this.txtMaNV = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtMaNV = new System.Windows.Forms.TextBox();
-            this.txtHo = new System.Windows.Forms.TextBox();
-            this.txtTen = new System.Windows.Forms.TextBox();
-            this.txtDiaChiNV = new System.Windows.Forms.TextBox();
-            this.txtDienThoaiNV = new System.Windows.Forms.TextBox();
-            this.txtChucVu = new System.Windows.Forms.TextBox();
-            this.dtNgaySinhNV = new System.Windows.Forms.DateTimePicker();
             this.btThem = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
@@ -74,7 +74,66 @@
             this.groupBox1.Size = new System.Drawing.Size(580, 140);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Thông Tin Nhân Viên";
+            // 
+            // dtNgaySinhNV
+            // 
+            this.dtNgaySinhNV.Location = new System.Drawing.Point(106, 94);
+            this.dtNgaySinhNV.Name = "dtNgaySinhNV";
+            this.dtNgaySinhNV.Size = new System.Drawing.Size(144, 20);
+            this.dtNgaySinhNV.TabIndex = 2;
+            this.dtNgaySinhNV.Value = new System.DateTime(2016, 12, 25, 11, 44, 23, 0);
+            // 
+            // txtTen
+            // 
+            this.txtTen.Location = new System.Drawing.Point(106, 68);
+            this.txtTen.Name = "txtTen";
+            this.txtTen.Size = new System.Drawing.Size(144, 20);
+            this.txtTen.TabIndex = 1;
+            // 
+            // txtHo
+            // 
+            this.txtHo.Location = new System.Drawing.Point(106, 42);
+            this.txtHo.Name = "txtHo";
+            this.txtHo.Size = new System.Drawing.Size(144, 20);
+            this.txtHo.TabIndex = 1;
+            // 
+            // txtChucVu
+            // 
+            this.txtChucVu.Location = new System.Drawing.Point(355, 68);
+            this.txtChucVu.Name = "txtChucVu";
+            this.txtChucVu.Size = new System.Drawing.Size(144, 20);
+            this.txtChucVu.TabIndex = 1;
+            // 
+            // txtDienThoaiNV
+            // 
+            this.txtDienThoaiNV.Location = new System.Drawing.Point(355, 42);
+            this.txtDienThoaiNV.Name = "txtDienThoaiNV";
+            this.txtDienThoaiNV.Size = new System.Drawing.Size(144, 20);
+            this.txtDienThoaiNV.TabIndex = 1;
+            // 
+            // txtDiaChiNV
+            // 
+            this.txtDiaChiNV.Location = new System.Drawing.Point(355, 16);
+            this.txtDiaChiNV.Name = "txtDiaChiNV";
+            this.txtDiaChiNV.Size = new System.Drawing.Size(144, 20);
+            this.txtDiaChiNV.TabIndex = 1;
+            // 
+            // txtMaNV
+            // 
+            this.txtMaNV.Location = new System.Drawing.Point(106, 16);
+            this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.Size = new System.Drawing.Size(144, 20);
+            this.txtMaNV.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(21, 99);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 13);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Ngày Sinh";
             // 
             // label6
             // 
@@ -130,65 +189,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Nhân Viên";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(21, 99);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 13);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Ngày Sinh";
-            // 
-            // txtMaNV
-            // 
-            this.txtMaNV.Location = new System.Drawing.Point(106, 16);
-            this.txtMaNV.Name = "txtMaNV";
-            this.txtMaNV.Size = new System.Drawing.Size(144, 20);
-            this.txtMaNV.TabIndex = 1;
-            // 
-            // txtHo
-            // 
-            this.txtHo.Location = new System.Drawing.Point(106, 42);
-            this.txtHo.Name = "txtHo";
-            this.txtHo.Size = new System.Drawing.Size(144, 20);
-            this.txtHo.TabIndex = 1;
-            // 
-            // txtTen
-            // 
-            this.txtTen.Location = new System.Drawing.Point(106, 68);
-            this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(144, 20);
-            this.txtTen.TabIndex = 1;
-            // 
-            // txtDiaChiNV
-            // 
-            this.txtDiaChiNV.Location = new System.Drawing.Point(355, 16);
-            this.txtDiaChiNV.Name = "txtDiaChiNV";
-            this.txtDiaChiNV.Size = new System.Drawing.Size(144, 20);
-            this.txtDiaChiNV.TabIndex = 1;
-            // 
-            // txtDienThoaiNV
-            // 
-            this.txtDienThoaiNV.Location = new System.Drawing.Point(355, 42);
-            this.txtDienThoaiNV.Name = "txtDienThoaiNV";
-            this.txtDienThoaiNV.Size = new System.Drawing.Size(144, 20);
-            this.txtDienThoaiNV.TabIndex = 1;
-            // 
-            // txtChucVu
-            // 
-            this.txtChucVu.Location = new System.Drawing.Point(355, 68);
-            this.txtChucVu.Name = "txtChucVu";
-            this.txtChucVu.Size = new System.Drawing.Size(144, 20);
-            this.txtChucVu.TabIndex = 1;
-            // 
-            // dtNgaySinhNV
-            // 
-            this.dtNgaySinhNV.Location = new System.Drawing.Point(106, 94);
-            this.dtNgaySinhNV.Name = "dtNgaySinhNV";
-            this.dtNgaySinhNV.Size = new System.Drawing.Size(144, 20);
-            this.dtNgaySinhNV.TabIndex = 2;
-            this.dtNgaySinhNV.Value = new System.DateTime(2016, 12, 25, 11, 44, 23, 0);
-            // 
             // btThem
             // 
             this.btThem.Location = new System.Drawing.Point(101, 167);
@@ -197,6 +197,7 @@
             this.btThem.TabIndex = 1;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // btSua
             // 
@@ -206,6 +207,7 @@
             this.btSua.TabIndex = 1;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btXoa
             // 
@@ -215,6 +217,7 @@
             this.btXoa.TabIndex = 1;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // groupBox2
             // 
@@ -235,6 +238,7 @@
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.Size = new System.Drawing.Size(573, 180);
             this.dgvNhanVien.TabIndex = 0;
+            this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             // 
             // FrmNhanVien
             // 
