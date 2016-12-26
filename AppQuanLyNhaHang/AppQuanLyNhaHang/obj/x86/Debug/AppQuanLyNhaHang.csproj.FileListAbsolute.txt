@@ -21,3 +21,10 @@ C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\A
 C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.csproj.GenerateResource.Cache
 C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\bin\Debug\AppQuanLyNhaHang.pdb
 C:\Users\ACER\Desktop\working3\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\bin\Debug\AppQuanLyNhaHang.exe.config
+C:\Users\ACER\Desktop\working3\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FormLoaiSP.resources
+C:\Users\ACER\Desktop\working3\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FrmMain.resources
+C:\Users\ACER\Desktop\working3\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.frmNhanVien.resources
+C:\Users\ACER\Desktop\working3\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FrmQuanLy.resources
+C:\Users\ACER\Desktop\working3\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FrmSanPham.resources
+C:\Users\ACER\Desktop\working3\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.Properties.Resources.resources
+C:\Users\ACER\Desktop\working3\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.csproj.GenerateResource.Cache
