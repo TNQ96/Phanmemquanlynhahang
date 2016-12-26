@@ -13,8 +13,8 @@ namespace AppQuanLyNhaHang
 {
     public partial class FrmSanPham : Form
     {
-        //string cnStr;
-       // SqlConnection cn;
+        string cnStr;
+        SqlConnection cn;
         public FrmSanPham()
         {
             InitializeComponent();
@@ -22,8 +22,8 @@ namespace AppQuanLyNhaHang
 
         private void FrmSanPham_Load(object sender, EventArgs e)
         {
-           // cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
-          //  cn = new SqlConnection(cnStr);
+            cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
+            cn = new SqlConnection(cnStr);
             LoadProduct();
             FillNoGirdView();
             FillCombo();
@@ -62,27 +62,8 @@ namespace AppQuanLyNhaHang
         }
         private void FillCombo()
         {
-            try
-            {
-                using (var db = new NhaHangHanEntities())
-                {
-                    var query = from prd in db.LoaiSP
-                                select new
-                                {
-                                    MaLoaiSP = prd.MaLoaiSP,
-                                    TenLoaiSP = prd.TenLoaiSP
-                                };
-                    cbbMaLoaiSP.DataSource = query.ToList();
-                    cbbMaLoaiSP.DisplayMember = "TenLoaiSP";
-                    cbbMaLoaiSP.ValueMember = "MaLoaiSP";
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            /*cn.Open();
-            SqlCommand cm = new SqlCommand("SELECT MaLoaiSP FROM LoaiSP ORDER BY MaLoaiSP ASC", cn);
+            cn.Open();
+            SqlCommand cm = new SqlCommand("SELECT * FROM LoaiSP ORDER BY MaLoaiSP ASC", cn);
             try
             {
                 SqlDataReader dr = cm.ExecuteReader();
@@ -101,7 +82,7 @@ namespace AppQuanLyNhaHang
             finally
             {
                 cn.Close();
-            }*/
+            }
         }
 
         private void btAdd_Click(object sender, EventArgs e)
@@ -116,7 +97,7 @@ namespace AppQuanLyNhaHang
                         TenSP = txtTenSP.Text.Trim(),
                         Dongia = double.Parse(txtDonGia.Text.Trim()),
                         Donvitinh = txtDVT.Text.Trim(),
-                        MaLoaiSP = int.Parse(cbbMaLoaiSP.SelectedValue.ToString())
+                        MaLoaiSP = int.Parse(cbbMaLoaiSP.Text)
 
                     };
                     db.SanPham.AddObject(prd);
@@ -173,7 +154,7 @@ namespace AppQuanLyNhaHang
                         prdToUpdate.TenSP = txtTenSP.Text.Trim();
                         prdToUpdate.Donvitinh = txtDVT.Text.Trim();
                         prdToUpdate.Dongia = double.Parse(txtDonGia.Text.Trim());
-                        prdToUpdate.MaLoaiSP = int.Parse(cbbMaLoaiSP.SelectedValue.ToString());
+                        prdToUpdate.MaLoaiSP = int.Parse(cbbMaLoaiSP.Text);
                         db.SaveChanges();
                     }
                     LoadProduct();

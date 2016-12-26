@@ -50,23 +50,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormLoaiSP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormLoaiSP.Designer.cs">
-      <DependentUpon>FormLoaiSP.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNhanVien.cs">
+    <Compile Include="FrmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNhanVien.Designer.cs">
-      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    <Compile Include="FrmNhanVien.Designer.cs">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmQuanLy.cs">
       <SubType>Form</SubType>
@@ -87,14 +81,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormLoaiSP.resx">
-      <DependentUpon>FormLoaiSP.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNhanVien.resx">
-      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    <EmbeddedResource Include="FrmNhanVien.resx">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQuanLy.resx">
       <DependentUpon>FrmQuanLy.cs</DependentUpon>

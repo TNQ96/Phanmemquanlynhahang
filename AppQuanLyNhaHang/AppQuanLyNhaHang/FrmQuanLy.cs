@@ -31,9 +31,9 @@ namespace AppQuanLyNhaHang
             this.Hide();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btQLNV_Click(object sender, EventArgs e)
         {
-            FormLoaiSP f = new FormLoaiSP();
+            FrmNhanVien f = new FrmNhanVien();
             f.Show();
             this.Hide();
         }
