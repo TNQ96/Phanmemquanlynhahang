@@ -13,7 +13,10 @@ C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\bin\Debug\AppQu
 C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.exe
 C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.pdb
 C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\bin\Debug\AppQuanLyNhaHang.exe
+<<<<<<< HEAD
 C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\bin\Debug\AppQuanLyNhaHang.pdb
+=======
+>>>>>>> 9b3d1b16d375cbdaa4aa4c63c9dce232006b16c7
 C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.csprojResolveAssemblyReference.cache
 C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FrmMain.resources
 C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FrmQuanLy.resources
