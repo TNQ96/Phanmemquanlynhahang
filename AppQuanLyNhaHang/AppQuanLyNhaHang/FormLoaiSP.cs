@@ -22,16 +22,12 @@ namespace AppQuanLyNhaHang
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        // 
         private void Form1_Load(object sender, EventArgs e)
         {
             cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
             cn = new SqlConnection(cnStr);
-            LoadData();
+            LoadData(); // Load data from Database to GridView
             FillNoGirdView();
         }
 
@@ -46,23 +42,18 @@ namespace AppQuanLyNhaHang
             try {
                 using (var db = new NhaHangHanEntities())
                 {
-                    var query = from prd in db.LoaiSP
+                    var query = from prd in db.LoaiSP // Query dữ liệu từ bảng LoaiSP
                                 select new
                                 {
                                     MaLoaiSP = prd.MaLoaiSP,
                                     TenLoaiSP = prd.TenLoaiSP
                                 };
 
-                    grvData.DataSource = query.ToList();
+                    grvData.DataSource = query.ToList(); // Đưa dữ liệu vào GridView
                 }
             } catch (Exception ex) {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -71,8 +62,10 @@ namespace AppQuanLyNhaHang
             {
                 if (txtTenHH.Text.Trim() != "")
                 {
+                    // Thêm dữ liệu vào database
                     using (var db = new NhaHangHanEntities())
                     {
+                        // Tạo biến chứa dữ liệu loại sản phẩm
                         var prd = new LoaiSP()
                         {
                             TenLoaiSP = txtTenHH.Text.Trim()
