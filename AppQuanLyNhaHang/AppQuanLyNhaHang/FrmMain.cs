@@ -22,5 +22,12 @@ namespace AppQuanLyNhaHang
             f.Show();
             this.Hide();
         }
+
+        private void btnThanToan_Click(object sender, EventArgs e)
+        {
+            FrmThanhToan f = new FrmThanhToan();
+            f.Show();
+            this.Hide();
+        }
     }
 }

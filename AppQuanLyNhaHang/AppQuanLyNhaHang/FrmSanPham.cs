@@ -88,7 +88,6 @@ namespace AppQuanLyNhaHang
             }
             /*cn.Open();
             SqlCommand cm = new SqlCommand("SELECT MaLoaiSP FROM LoaiSP ORDER BY MaLoaiSP ASC", cn);
->>>>>>> 9b3d1b16d375cbdaa4aa4c63c9dce232006b16c7
             try
             {
                 using (var db = new NhaHangHanEntities())
@@ -108,9 +107,6 @@ namespace AppQuanLyNhaHang
             {
                 MessageBox.Show(ex.Message);
             }
-<<<<<<< HEAD
-           
-=======
             finally
             {
                 cn.Close();

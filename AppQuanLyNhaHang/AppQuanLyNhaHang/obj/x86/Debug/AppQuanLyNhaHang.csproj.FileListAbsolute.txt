@@ -23,3 +23,4 @@ C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\A
 C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FrmSanPham.resources
 C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.Properties.Resources.resources
 C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.csproj.GenerateResource.Cache
+C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FrmThanhToan.resources

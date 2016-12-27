@@ -45,6 +45,7 @@
             this.btnThanToan.TabIndex = 0;
             this.btnThanToan.Text = "Thanh Toán";
             this.btnThanToan.UseVisualStyleBackColor = true;
+            this.btnThanToan.Click += new System.EventHandler(this.btnThanToan_Click);
             // 
             // BtnQuanLy
             // 
