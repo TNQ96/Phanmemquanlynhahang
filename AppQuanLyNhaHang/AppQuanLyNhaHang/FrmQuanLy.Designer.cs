@@ -30,14 +30,14 @@
         {
             this.btQLSP = new System.Windows.Forms.Button();
             this.btQLNV = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnQLKH = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btQLSP
             // 
-            this.btQLSP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btQLSP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btQLSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btQLSP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btQLSP.Location = new System.Drawing.Point(50, 128);
@@ -50,8 +50,8 @@
             // 
             // btQLNV
             // 
-            this.btQLNV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btQLNV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btQLNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btQLNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btQLNV.Location = new System.Drawing.Point(50, 216);
@@ -62,23 +62,24 @@
             this.btQLNV.UseVisualStyleBackColor = true;
             this.btQLNV.Click += new System.EventHandler(this.btQLNV_Click);
             // 
-            // button3
+            // btnQLKH
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.Location = new System.Drawing.Point(312, 216);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(207, 53);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Quản Lý Khách Hàng";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnQLKH.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQLKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnQLKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnQLKH.Location = new System.Drawing.Point(312, 216);
+            this.btnQLKH.Name = "btnQLKH";
+            this.btnQLKH.Size = new System.Drawing.Size(207, 53);
+            this.btnQLKH.TabIndex = 0;
+            this.btnQLKH.Text = "Quản Lý Khách Hàng";
+            this.btnQLKH.UseVisualStyleBackColor = true;
+            this.btnQLKH.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button4.Location = new System.Drawing.Point(312, 128);
@@ -95,7 +96,7 @@
             this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(605, 362);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnQLKH);
             this.Controls.Add(this.btQLNV);
             this.Controls.Add(this.btQLSP);
             this.MinimumSize = new System.Drawing.Size(621, 401);
@@ -111,7 +112,7 @@
 
         private System.Windows.Forms.Button btQLSP;
         private System.Windows.Forms.Button btQLNV;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnQLKH;
         private System.Windows.Forms.Button button4;
     }
 }

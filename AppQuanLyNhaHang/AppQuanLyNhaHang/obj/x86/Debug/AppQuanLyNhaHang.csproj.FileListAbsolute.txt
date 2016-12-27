@@ -24,3 +24,16 @@ C:\Users\ACER\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNh
 C:\Users\ACER\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.pdb
 C:\Users\ACER\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.csprojResolveAssemblyReference.cache
 C:\Users\ACER\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FrmNhanVien.resources
+C:\Users\Phuong Linh\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\bin\Debug\AppQuanLyNhaHang.exe.config
+C:\Users\Phuong Linh\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.exe
+C:\Users\Phuong Linh\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.pdb
+C:\Users\Phuong Linh\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.csprojResolveAssemblyReference.cache
+C:\Users\Phuong Linh\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FrmKhachHang.resources
+C:\Users\Phuong Linh\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FrmMain.resources
+C:\Users\Phuong Linh\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FrmNhanVien.resources
+C:\Users\Phuong Linh\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FrmQuanLy.resources
+C:\Users\Phuong Linh\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FrmSanPham.resources
+C:\Users\Phuong Linh\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.Properties.Resources.resources
+C:\Users\Phuong Linh\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.csproj.GenerateResource.Cache
+C:\Users\Phuong Linh\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\bin\Debug\AppQuanLyNhaHang.exe
+C:\Users\Phuong Linh\Desktop\Working2\Phanmemquanlynhahang\AppQuanLyNhaHang\AppQuanLyNhaHang\bin\Debug\AppQuanLyNhaHang.pdb
