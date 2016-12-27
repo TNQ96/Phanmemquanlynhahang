@@ -37,5 +37,11 @@ namespace AppQuanLyNhaHang
             f.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmKhachHang f = new FrmKhachHang();
+            f.Show();
+        }
     }
 }
