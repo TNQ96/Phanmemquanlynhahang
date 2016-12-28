@@ -57,7 +57,7 @@
             this.BtnQuanLy.Margin = new System.Windows.Forms.Padding(6);
             this.BtnQuanLy.Name = "BtnQuanLy";
             this.BtnQuanLy.Size = new System.Drawing.Size(254, 71);
-            this.BtnQuanLy.TabIndex = 0;
+            this.BtnQuanLy.TabIndex = 1;
             this.BtnQuanLy.Text = "Quản Lý";
             this.BtnQuanLy.UseVisualStyleBackColor = true;
             this.BtnQuanLy.Click += new System.EventHandler(this.BtnQuanLy_Click);
@@ -76,6 +76,7 @@
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần Mềm Quản Lý Nhà Hàng";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMain_FormClosed);
             this.ResumeLayout(false);
 
         }

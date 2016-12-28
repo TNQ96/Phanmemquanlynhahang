@@ -91,7 +91,7 @@
             this.dtKH.Location = new System.Drawing.Point(427, 136);
             this.dtKH.Name = "dtKH";
             this.dtKH.Size = new System.Drawing.Size(156, 26);
-            this.dtKH.TabIndex = 4;
+            this.dtKH.TabIndex = 5;
             // 
             // label8
             // 
@@ -125,21 +125,21 @@
             this.txtPhone.Location = new System.Drawing.Point(428, 85);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(156, 26);
-            this.txtPhone.TabIndex = 1;
+            this.txtPhone.TabIndex = 4;
             // 
             // txtHo
             // 
             this.txtHo.Location = new System.Drawing.Point(111, 131);
             this.txtHo.Name = "txtHo";
             this.txtHo.Size = new System.Drawing.Size(156, 26);
-            this.txtHo.TabIndex = 1;
+            this.txtHo.TabIndex = 2;
             // 
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(428, 40);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(156, 26);
-            this.txtName.TabIndex = 1;
+            this.txtName.TabIndex = 3;
             // 
             // txtAddress
             // 
@@ -153,7 +153,7 @@
             this.txtID.Location = new System.Drawing.Point(113, 43);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(156, 26);
-            this.txtID.TabIndex = 1;
+            this.txtID.TabIndex = 0;
             // 
             // label5
             // 
@@ -198,7 +198,7 @@
             this.btnAdd.Location = new System.Drawing.Point(156, 216);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(98, 37);
-            this.btnAdd.TabIndex = 2;
+            this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "THÊM";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -210,7 +210,7 @@
             this.btnDel.Location = new System.Drawing.Point(277, 216);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(98, 37);
-            this.btnDel.TabIndex = 2;
+            this.btnDel.TabIndex = 1;
             this.btnDel.Text = "XOÁ";
             this.btnDel.UseVisualStyleBackColor = false;
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
@@ -261,6 +261,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmKhachHang";
             this.Text = "FrmKhachHang";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmKhachHang_FormClosed);
             this.Load += new System.EventHandler(this.FrmKhachHang_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

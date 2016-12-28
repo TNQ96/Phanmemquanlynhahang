@@ -155,5 +155,12 @@ namespace AppQuanLyNhaHang
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void FrmKhachHang_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FrmQuanLy f = new FrmQuanLy();
+            f.Show();
+            this.Hide();
+        }
     }
 }

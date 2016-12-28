@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.btQLSP = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnQLNV = new System.Windows.Forms.Button();
+            this.btnQLKH = new System.Windows.Forms.Button();
+            this.btnQLLSP = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btQLSP
@@ -48,44 +48,47 @@
             this.btQLSP.UseVisualStyleBackColor = true;
             this.btQLSP.Click += new System.EventHandler(this.btQLSP_Click);
             // 
-            // button2
+            // btnQLNV
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.btnQLNV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button2.Location = new System.Drawing.Point(50, 216);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(207, 53);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Quản Lý Nhân Viên";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnQLNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnQLNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnQLNV.Location = new System.Drawing.Point(50, 216);
+            this.btnQLNV.Name = "btnQLNV";
+            this.btnQLNV.Size = new System.Drawing.Size(207, 53);
+            this.btnQLNV.TabIndex = 2;
+            this.btnQLNV.Text = "Quản Lý Nhân Viên";
+            this.btnQLNV.UseVisualStyleBackColor = true;
+            this.btnQLNV.Click += new System.EventHandler(this.btnQLNV_Click);
             // 
-            // button3
+            // btnQLKH
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.btnQLKH.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.Location = new System.Drawing.Point(312, 216);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(207, 53);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Quản Lý Khách Hàng";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnQLKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnQLKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnQLKH.Location = new System.Drawing.Point(312, 216);
+            this.btnQLKH.Name = "btnQLKH";
+            this.btnQLKH.Size = new System.Drawing.Size(207, 53);
+            this.btnQLKH.TabIndex = 3;
+            this.btnQLKH.Text = "Quản Lý Khách Hàng";
+            this.btnQLKH.UseVisualStyleBackColor = true;
+            this.btnQLKH.Click += new System.EventHandler(this.btnQLKH_Click);
             // 
-            // button4
+            // btnQLLSP
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.btnQLLSP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button4.Location = new System.Drawing.Point(312, 128);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(207, 53);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Quản Lý Loại Sản Phẩm";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnQLLSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnQLLSP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnQLLSP.Location = new System.Drawing.Point(312, 128);
+            this.btnQLLSP.Name = "btnQLLSP";
+            this.btnQLLSP.Size = new System.Drawing.Size(207, 53);
+            this.btnQLLSP.TabIndex = 1;
+            this.btnQLLSP.Text = "Quản Lý Loại Sản Phẩm";
+            this.btnQLLSP.UseVisualStyleBackColor = true;
+            this.btnQLLSP.Click += new System.EventHandler(this.btnQLLSP_Click);
             // 
             // FrmQuanLy
             // 
@@ -93,9 +96,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(605, 362);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnQLLSP);
+            this.Controls.Add(this.btnQLKH);
+            this.Controls.Add(this.btnQLNV);
             this.Controls.Add(this.btQLSP);
             this.MinimumSize = new System.Drawing.Size(621, 401);
             this.Name = "FrmQuanLy";
@@ -109,8 +112,8 @@
         #endregion
 
         private System.Windows.Forms.Button btQLSP;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnQLNV;
+        private System.Windows.Forms.Button btnQLKH;
+        private System.Windows.Forms.Button btnQLLSP;
     }
 }

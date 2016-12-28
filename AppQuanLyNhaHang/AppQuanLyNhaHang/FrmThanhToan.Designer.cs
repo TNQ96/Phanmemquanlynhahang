@@ -41,7 +41,6 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dgvDSHH = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
-            this.btDropSP = new System.Windows.Forms.Button();
             this.btAddSP = new System.Windows.Forms.Button();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.txtDonGia = new System.Windows.Forms.TextBox();
@@ -150,7 +149,6 @@
             // 
             this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.btDropSP);
             this.groupBox2.Controls.Add(this.btAddSP);
             this.groupBox2.Controls.Add(this.txtSoLuong);
             this.groupBox2.Controls.Add(this.txtDonGia);
@@ -196,18 +194,9 @@
             this.label9.TabIndex = 4;
             this.label9.Text = "0";
             // 
-            // btDropSP
-            // 
-            this.btDropSP.Location = new System.Drawing.Point(153, 82);
-            this.btDropSP.Name = "btDropSP";
-            this.btDropSP.Size = new System.Drawing.Size(61, 39);
-            this.btDropSP.TabIndex = 3;
-            this.btDropSP.Text = "Bớt";
-            this.btDropSP.UseVisualStyleBackColor = true;
-            // 
             // btAddSP
             // 
-            this.btAddSP.Location = new System.Drawing.Point(64, 82);
+            this.btAddSP.Location = new System.Drawing.Point(130, 90);
             this.btAddSP.Name = "btAddSP";
             this.btAddSP.Size = new System.Drawing.Size(61, 39);
             this.btAddSP.TabIndex = 3;
@@ -336,6 +325,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmThanhToan";
             this.Text = "FrmThanhToan";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmThanhToan_FormClosed);
             this.Load += new System.EventHandler(this.FrmThanhToan_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -362,7 +352,6 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dgvDSHH;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btDropSP;
         private System.Windows.Forms.Button btAddSP;
         private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.TextBox txtDonGia;

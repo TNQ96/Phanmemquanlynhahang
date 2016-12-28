@@ -11,7 +11,6 @@ namespace AppQuanLyNhaHang
 {
     public partial class FrmThanhToan : Form
     {
-        DataTable dtDSCT = new System.Data.DataTable();
         public FrmThanhToan()
         {
             InitializeComponent();
@@ -166,6 +165,7 @@ namespace AppQuanLyNhaHang
             cbbNhanVien.Text = dgvDSHD.Rows[index].Cells[1].Value.ToString();
             cbbKhachHang.Text = dgvDSHD.Rows[index].Cells[2].Value.ToString();
             datetimeHD.Value = DateTime.Parse(dgvDSHD.Rows[index].Cells[3].Value.ToString());
+            LoadDSHH();
         }
         private void btDelHD_Click(object sender, EventArgs e)
         {
@@ -216,6 +216,7 @@ namespace AppQuanLyNhaHang
                         db.CTDH.AddObject(CTDH);
                         db.SaveChanges();
                         FrmThanhToan_Load(sender, e);
+                        LoadDSHH();
                     }
                 }
                 catch (Exception ex)
@@ -236,7 +237,7 @@ namespace AppQuanLyNhaHang
                 using (var db = new NhaHangHanEntities())
                 {
                     var query = from prd in db.SanPham
-                                where prd.MaSP == cbbSanPham.SelectedValue.ToString()
+                                where cbbSanPham.SelectedValue.ToString() == prd.MaSP
                                 select prd.Dongia;
                     txtDonGia.Text = query.ToString();
                 }
@@ -245,6 +246,36 @@ namespace AppQuanLyNhaHang
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        private void LoadDSHH()
+        {
+            try
+            {
+                using (var db = new NhaHangHanEntities())
+                {
+                    var IDHD = int.Parse(txtMaHD.Text);
+                    var query = from CT in db.CTDH
+                                where CT.MaHD == IDHD
+                                select new
+                                {
+                                    MaHD = CT.MaHD,
+                                    MaSP = CT.MaSP,
+                                    SoLuong = CT.Soluong
+                                };
+                    dgvDSHH.DataSource = query.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void FrmThanhToan_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FrmMain f = new FrmMain();
+            f.Show();
+            this.Hide();
         }
     }
 }

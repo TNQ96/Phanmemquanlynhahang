@@ -86,7 +86,7 @@
             this.cbbMaLoaiSP.Location = new System.Drawing.Point(425, 46);
             this.cbbMaLoaiSP.Name = "cbbMaLoaiSP";
             this.cbbMaLoaiSP.Size = new System.Drawing.Size(124, 21);
-            this.cbbMaLoaiSP.TabIndex = 2;
+            this.cbbMaLoaiSP.TabIndex = 4;
             // 
             // txtDVT
             // 
@@ -95,7 +95,7 @@
             this.txtDVT.Location = new System.Drawing.Point(87, 77);
             this.txtDVT.Name = "txtDVT";
             this.txtDVT.Size = new System.Drawing.Size(103, 20);
-            this.txtDVT.TabIndex = 1;
+            this.txtDVT.TabIndex = 2;
             // 
             // txtTenSP
             // 
@@ -113,7 +113,7 @@
             this.txtDonGia.Location = new System.Drawing.Point(386, 15);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(103, 20);
-            this.txtDonGia.TabIndex = 1;
+            this.txtDonGia.TabIndex = 3;
             // 
             // txtMaSP
             // 
@@ -122,7 +122,7 @@
             this.txtMaSP.Location = new System.Drawing.Point(87, 15);
             this.txtMaSP.Name = "txtMaSP";
             this.txtMaSP.Size = new System.Drawing.Size(103, 20);
-            this.txtMaSP.TabIndex = 1;
+            this.txtMaSP.TabIndex = 0;
             // 
             // label3
             // 
@@ -275,7 +275,7 @@
             this.btAdd.Location = new System.Drawing.Point(138, 117);
             this.btAdd.Name = "btAdd";
             this.btAdd.Size = new System.Drawing.Size(75, 38);
-            this.btAdd.TabIndex = 2;
+            this.btAdd.TabIndex = 0;
             this.btAdd.Text = "Thêm";
             this.btAdd.UseVisualStyleBackColor = true;
             this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
@@ -288,7 +288,7 @@
             this.btDel.Location = new System.Drawing.Point(255, 117);
             this.btDel.Name = "btDel";
             this.btDel.Size = new System.Drawing.Size(75, 38);
-            this.btDel.TabIndex = 2;
+            this.btDel.TabIndex = 1;
             this.btDel.Text = "Xóa";
             this.btDel.UseVisualStyleBackColor = true;
             this.btDel.Click += new System.EventHandler(this.btDel_Click);

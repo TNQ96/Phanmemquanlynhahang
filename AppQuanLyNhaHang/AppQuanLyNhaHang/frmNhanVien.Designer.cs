@@ -81,7 +81,7 @@
             this.dtNgaySinhNV.Location = new System.Drawing.Point(106, 94);
             this.dtNgaySinhNV.Name = "dtNgaySinhNV";
             this.dtNgaySinhNV.Size = new System.Drawing.Size(144, 20);
-            this.dtNgaySinhNV.TabIndex = 2;
+            this.dtNgaySinhNV.TabIndex = 3;
             this.dtNgaySinhNV.Value = new System.DateTime(2016, 12, 25, 11, 44, 23, 0);
             // 
             // txtTen
@@ -89,7 +89,7 @@
             this.txtTen.Location = new System.Drawing.Point(106, 68);
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(144, 20);
-            this.txtTen.TabIndex = 1;
+            this.txtTen.TabIndex = 2;
             // 
             // txtHo
             // 
@@ -103,28 +103,28 @@
             this.txtChucVu.Location = new System.Drawing.Point(355, 68);
             this.txtChucVu.Name = "txtChucVu";
             this.txtChucVu.Size = new System.Drawing.Size(144, 20);
-            this.txtChucVu.TabIndex = 1;
+            this.txtChucVu.TabIndex = 6;
             // 
             // txtDienThoaiNV
             // 
             this.txtDienThoaiNV.Location = new System.Drawing.Point(355, 42);
             this.txtDienThoaiNV.Name = "txtDienThoaiNV";
             this.txtDienThoaiNV.Size = new System.Drawing.Size(144, 20);
-            this.txtDienThoaiNV.TabIndex = 1;
+            this.txtDienThoaiNV.TabIndex = 5;
             // 
             // txtDiaChiNV
             // 
             this.txtDiaChiNV.Location = new System.Drawing.Point(355, 16);
             this.txtDiaChiNV.Name = "txtDiaChiNV";
             this.txtDiaChiNV.Size = new System.Drawing.Size(144, 20);
-            this.txtDiaChiNV.TabIndex = 1;
+            this.txtDiaChiNV.TabIndex = 4;
             // 
             // txtMaNV
             // 
             this.txtMaNV.Location = new System.Drawing.Point(106, 16);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(144, 20);
-            this.txtMaNV.TabIndex = 1;
+            this.txtMaNV.TabIndex = 0;
             // 
             // label7
             // 
@@ -194,7 +194,7 @@
             this.btThem.Location = new System.Drawing.Point(101, 167);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(83, 49);
-            this.btThem.TabIndex = 1;
+            this.btThem.TabIndex = 0;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
             this.btThem.Click += new System.EventHandler(this.btThem_Click);
@@ -214,7 +214,7 @@
             this.btXoa.Location = new System.Drawing.Point(383, 167);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(83, 49);
-            this.btXoa.TabIndex = 1;
+            this.btXoa.TabIndex = 2;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
@@ -252,6 +252,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmNhanVien";
             this.Text = "FrmNhanVien";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmNhanVien_FormClosed);
             this.Load += new System.EventHandler(this.FrmNhanVien_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

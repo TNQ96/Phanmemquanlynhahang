@@ -11,16 +11,29 @@ namespace AppQuanLyNhaHang
 {
     public partial class FrmMain : Form
     {
+        string chucvu = "";
         public FrmMain()
         {
             InitializeComponent();
         }
-
+        public FrmMain(string chucvu)
+        {
+            InitializeComponent();
+            this.chucvu = chucvu;
+        }
         private void BtnQuanLy_Click(object sender, EventArgs e)
         {
-            FrmQuanLy f = new FrmQuanLy();
-            f.Show();
-            this.Hide();
+            if (chucvu == "Quản Lý")
+            {
+                FrmQuanLy f = new FrmQuanLy();
+                f.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền thực hiện chức năng này!"); 
+            }
+
         }
 
         private void btnThanToan_Click(object sender, EventArgs e)
@@ -28,6 +41,11 @@ namespace AppQuanLyNhaHang
             FrmThanhToan f = new FrmThanhToan();
             f.Show();
             this.Hide();
+        }
+
+        private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -27,3 +27,4 @@ C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\A
 C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FormLoaiSP.resources
 C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FrmKhachHang.resources
 C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.FrmNhanVien.resources
+C:\Users\Nhat\Desktop\Working3\AppQuanLyNhaHang\AppQuanLyNhaHang\obj\x86\Debug\AppQuanLyNhaHang.frmLogin.resources

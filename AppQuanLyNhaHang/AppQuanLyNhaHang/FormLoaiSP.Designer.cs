@@ -71,7 +71,7 @@
             this.txtMaHang.Location = new System.Drawing.Point(141, 31);
             this.txtMaHang.Name = "txtMaHang";
             this.txtMaHang.Size = new System.Drawing.Size(432, 20);
-            this.txtMaHang.TabIndex = 1;
+            this.txtMaHang.TabIndex = 0;
             // 
             // label2
             // 
@@ -147,7 +147,7 @@
             this.btnAdd.Location = new System.Drawing.Point(231, 171);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(106, 35);
-            this.btnAdd.TabIndex = 2;
+            this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -158,7 +158,7 @@
             this.btnEdit.Location = new System.Drawing.Point(343, 171);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(106, 35);
-            this.btnEdit.TabIndex = 2;
+            this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "Sửa";
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
