@@ -1,0 +1,11 @@
+Huong dan su dung:
+- form login:
+	*ID quan ly:
+			+ID: Quang
+			+Pass:123
+	*ID nhan vien:
+			+ID: Nhi
+			+Pass:123
+Luu y: Khi dang nhap vao ID quan ly, neu chon vo phan thanh toan truoc thi khi quay lai 
+se khong vo form quan ly duoc, phai dang nhap lai.
+- Cac form khac thao tac nhu binh thuong

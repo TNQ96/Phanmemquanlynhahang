@@ -324,6 +324,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmThanhToan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmThanhToan";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmThanhToan_FormClosed);
             this.Load += new System.EventHandler(this.FrmThanhToan_Load);

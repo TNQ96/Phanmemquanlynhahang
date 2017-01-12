@@ -193,6 +193,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormLoaiSP";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin loại sản phẩm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLoaiSP_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
